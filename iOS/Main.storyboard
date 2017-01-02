@@ -1,40 +1,69 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
-	<dependencies>
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="tne-QT-ifu">
-			<objects>
-				<viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-						<viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-						<rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<subviews>
-							<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
-								<rect key="frame" x="224" y="285" width="152" height="30" />
-								<state key="normal" title="Hello World, Click Me!">
-									<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite" />
-								</state>
-							</button>
-						</subviews>
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-						<constraints>
-							<constraint firstItem="oBE-Ac-vcx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HiD-uS-i16" />
-							<constraint firstItem="oBE-Ac-vcx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YgX-7e-bMc" />
-						</constraints>
-					</view>
-					<connections>
-						<outlet property="Button" destination="oBE-Ac-vcx" id="OkX-0Z-gth" />
-					</connections>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
-			</objects>
-		</scene>
-	</scenes>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="11">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="10">
+            <objects>
+                <viewController id="11" sceneMemberID="viewController" customClass="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8"/>
+                        <viewControllerLayoutGuide type="bottom" id="9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                                <rect key="frame" x="40" y="285" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="24" firstItem="18" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0" blue="0.18823529411764706" alpha="1"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="30">
+                                <rect key="frame" x="40" y="230" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="34" firstItem="30" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.94509803921568625" blue="0.086274509803921567" alpha="1"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                                <rect key="frame" x="40" y="340" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="42" firstItem="35" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <color key="tintColor" colorSpace="calibratedRGB" red="0.094117647058823528" green="0.54117647058823526" blue="0.75294117647058822" alpha="1"/>
+                            </progressView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="19" firstItem="18" firstAttribute="leading" secondItem="12" secondAttribute="leading" constant="40"/>
+                            <constraint id="20" firstItem="12" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="40"/>
+                            <constraint id="21" firstItem="18" firstAttribute="centerX" secondItem="12" secondAttribute="centerX"/>
+                            <constraint id="22" firstItem="18" firstAttribute="centerY" secondItem="12" secondAttribute="centerY"/>
+                            <constraint id="23" firstItem="18" firstAttribute="centerY" secondItem="12" secondAttribute="centerY"/>
+                            <constraint id="31" firstItem="30" firstAttribute="leading" secondItem="18" secondAttribute="leading"/>
+                            <constraint id="32" firstItem="18" firstAttribute="trailing" secondItem="30" secondAttribute="trailing"/>
+                            <constraint id="33" firstItem="18" firstAttribute="top" secondItem="30" secondAttribute="centerY" constant="40"/>
+                            <constraint id="36" firstItem="18" firstAttribute="trailing" secondItem="35" secondAttribute="trailing"/>
+                            <constraint id="37" firstItem="35" firstAttribute="leading" secondItem="18" secondAttribute="leading"/>
+                            <constraint id="41" firstItem="35" firstAttribute="centerY" secondItem="18" secondAttribute="bottom" constant="40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressY" destination="18" id="name-outlet-18"/>
+                        <outlet property="progressX" destination="30" id="name-outlet-30"/>
+                        <outlet property="progressZ" destination="35" id="name-outlet-35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="14"/>
+        </scene>
+    </scenes>
 </document>
